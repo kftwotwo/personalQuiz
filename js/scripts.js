@@ -7,6 +7,7 @@ $(document).ready(function(){
       var sickMode = $(this).val();
           totalSick.push(sickMode);
        numSicks = totalSick.length;
+       $('#body-responses').append(sickMode + "<br>");
     });
 
     $("#life-responses").show();
@@ -15,6 +16,7 @@ $(document).ready(function(){
       var lifeMode = $(this).val();
         totalLife.push(lifeMode);
        numLifes = totalLife.length;
+       $('#life-responses').append(lifeMode + "<br>");
     });
     if (numSicks > 4 || numLifes >4 )
       alert("Please seek medical attention!");
